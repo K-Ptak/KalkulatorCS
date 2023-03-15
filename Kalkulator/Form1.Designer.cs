@@ -57,6 +57,7 @@
             this.tb_Screen.ReadOnly = true;
             this.tb_Screen.Size = new System.Drawing.Size(419, 26);
             this.tb_Screen.TabIndex = 0;
+            this.tb_Screen.Text = "0";
             this.tb_Screen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn_7
@@ -67,6 +68,7 @@
             this.btn_7.TabIndex = 1;
             this.btn_7.Text = "7";
             this.btn_7.UseVisualStyleBackColor = true;
+            this.btn_7.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_4
             // 
@@ -76,6 +78,7 @@
             this.btn_4.TabIndex = 2;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = true;
+            this.btn_4.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_1
             // 
@@ -85,7 +88,7 @@
             this.btn_1.TabIndex = 3;
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = true;
-            this.btn_1.Click += new System.EventHandler(this.button3_Click);
+            this.btn_1.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_8
             // 
@@ -95,6 +98,7 @@
             this.btn_8.TabIndex = 4;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = true;
+            this.btn_8.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_5
             // 
@@ -104,6 +108,7 @@
             this.btn_5.TabIndex = 5;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = true;
+            this.btn_5.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_2
             // 
@@ -113,6 +118,7 @@
             this.btn_2.TabIndex = 6;
             this.btn_2.Text = "2";
             this.btn_2.UseVisualStyleBackColor = true;
+            this.btn_2.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_9
             // 
@@ -122,6 +128,7 @@
             this.btn_9.TabIndex = 7;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = true;
+            this.btn_9.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_6
             // 
@@ -131,6 +138,7 @@
             this.btn_6.TabIndex = 8;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = true;
+            this.btn_6.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_3
             // 
@@ -140,6 +148,7 @@
             this.btn_3.TabIndex = 9;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = true;
+            this.btn_3.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_plusminus
             // 
@@ -149,6 +158,7 @@
             this.btn_plusminus.TabIndex = 10;
             this.btn_plusminus.Text = "+/-";
             this.btn_plusminus.UseVisualStyleBackColor = true;
+            this.btn_plusminus.Click += new System.EventHandler(this.btn_changeSign_click);
             // 
             // btn_0
             // 
@@ -158,6 +168,7 @@
             this.btn_0.TabIndex = 11;
             this.btn_0.Text = "0";
             this.btn_0.UseVisualStyleBackColor = true;
+            this.btn_0.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_separator
             // 
@@ -167,6 +178,7 @@
             this.btn_separator.TabIndex = 12;
             this.btn_separator.Text = ",";
             this.btn_separator.UseVisualStyleBackColor = true;
+            this.btn_separator.Click += new System.EventHandler(this.btn_number_click);
             // 
             // button_multiplication
             // 
@@ -221,7 +233,7 @@
             this.btn_cancel.TabIndex = 18;
             this.btn_cancel.Text = "C";
             this.btn_cancel.UseVisualStyleBackColor = true;
-            this.btn_cancel.Click += new System.EventHandler(this.button2_Click);
+            this.btn_cancel.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_backspace
             // 
