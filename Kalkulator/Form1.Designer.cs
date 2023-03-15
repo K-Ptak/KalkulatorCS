@@ -188,6 +188,7 @@
             this.button_multiplication.TabIndex = 13;
             this.button_multiplication.Text = "x";
             this.button_multiplication.UseVisualStyleBackColor = true;
+            this.button_multiplication.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_subtraction
             // 
@@ -197,6 +198,7 @@
             this.btn_subtraction.TabIndex = 14;
             this.btn_subtraction.Text = "-";
             this.btn_subtraction.UseVisualStyleBackColor = true;
+            this.btn_subtraction.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_addition
             // 
@@ -206,6 +208,7 @@
             this.btn_addition.TabIndex = 15;
             this.btn_addition.Text = "+";
             this.btn_addition.UseVisualStyleBackColor = true;
+            this.btn_addition.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_equals
             // 
@@ -224,6 +227,7 @@
             this.btn_division.TabIndex = 17;
             this.btn_division.Text = "÷";
             this.btn_division.UseVisualStyleBackColor = true;
+            this.btn_division.Click += new System.EventHandler(this.btn_number_click);
             // 
             // btn_cancel
             // 
