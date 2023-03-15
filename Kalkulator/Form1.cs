@@ -33,10 +33,20 @@ namespace Kalkulator
             {
                 tb_Top.Text = 0 + sign;
             }
-            else
+            else if(tb_Top.Text != "" && operation)
             {
                 tb_Top.Text += sign;
             }
+            else if(tb_Bottom.Text == "0")
+            {
+                tb_Bottom.Text = sign;
+            }
+            else
+            {
+                tb_Bottom.Text += sign;
+            }
+
+
             operation = false;
             
         }

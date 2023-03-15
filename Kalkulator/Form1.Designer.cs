@@ -258,7 +258,7 @@
             this.tb_Bottom.ReadOnly = true;
             this.tb_Bottom.Size = new System.Drawing.Size(419, 26);
             this.tb_Bottom.TabIndex = 20;
-            this.tb_Bottom.Text = "0 ";
+            this.tb_Bottom.Text = "0";
             this.tb_Bottom.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
