@@ -19,16 +19,25 @@ namespace Kalkulator
 
         private void btn_number_click(object sender, EventArgs e)
         {
+            string math_sym = "+-x÷";
             string sign = (sender as Button).Text;
 
-            if(tb_Screen.Text == "0")
+            bool operation = false;
+
+            if (math_sym.Contains(sign))
             {
-                tb_Screen.Text = sign;
+                operation = true;
+            }
+
+            if(tb_Top.Text == "" && operation)
+            {
+                tb_Top.Text = 0 + sign;
             }
             else
             {
-                tb_Screen.Text += sign;
+                tb_Top.Text += sign;
             }
+            operation = false;
             
         }
 
@@ -49,6 +58,68 @@ namespace Kalkulator
 
         private void btn_equals_click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_backspace_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_Screen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_equals_Click(object sender, EventArgs e)
+        {
+            string input = tb_Top.Text;
+            tb_Top.Text += "=";
+
+            String[] separator = { "+", "-", "x", "÷"};
+
+            String[] strlist = input.Split(separator, 2, StringSplitOptions.RemoveEmptyEntries);
+            
+            float number1 = float.Parse(strlist[0]);
+            float number2 = float.Parse(strlist[1]);
+
+            tb_Bottom.Text = "";
+            float answear = 0.0f;
+
+            if (input.Contains("+"))
+            {
+                answear = number1 + number2;
+                string answear_Output = answear.ToString();
+                tb_Bottom.Text = answear_Output;
+            }
+            if (input.Contains("-"))
+            {
+                answear = number1 - number2;
+                string answear_Output = answear.ToString();
+                tb_Bottom.Text = answear_Output;
+            }
+            if (input.Contains("x"))
+            {
+                answear = number1 * number2;
+                string answear_Output = answear.ToString();
+                tb_Bottom.Text = answear_Output;
+            }
+            if (input.Contains("÷"))
+            {
+                if (number2 == 0)
+                {
+                    tb_Bottom.Text = "Nie można dzielić przez zero";
+
+                }
+                else
+                {
+                    answear = number1 / number2;
+                    string answear_Output = answear.ToString();
+                    tb_Bottom.Text = answear_Output;
+                }
+            }
+            tb_Top.Text = "";
+
 
         }
     }
